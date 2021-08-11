@@ -1,6 +1,6 @@
 'use strict'
 
-import Ipfs from 'ipfs'
+const Ipfs = require('ipfs')
 
 const main = async () => {
   let ipfs;
