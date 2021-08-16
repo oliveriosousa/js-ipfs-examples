@@ -11,7 +11,7 @@
     "build": "parcel build index.html --no-scope-hoist",
     "serve": "parcel serve index.html --open -p 8888",
     "start": "npm run serve",
-    "test:example": "npm run build && playwright test tests"
+    "test:example": "npm run build && playwright test tests --retries=3"
   },
   "browserslist": "last 1 Chrome version",
   "dependencies": {
@@ -25,7 +25,7 @@
   "devDependencies": {
     "@babel/core": "^7.14.8",
     "@playwright/test": "^1.12.3",
-    "fs-extra": "^0.30.0",
+    "fs-extra": "^10.0.0",
     "ipfs-http-client": "^52.0.0",
     "parcel": "latest",
     "playwright": "^1.12.3",

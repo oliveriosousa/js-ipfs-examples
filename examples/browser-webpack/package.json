@@ -10,7 +10,7 @@
     "build": "webpack --env production",
     "serve": "webpack serve --hot-only --mode=development",
     "start": "npm run serve",
-    "test:example": "npm run build && playwright test tests"
+    "test:example": "npm run build && playwright test tests --retries=3"
   },
   "browserslist": [
     "last 1 Chrome version"
@@ -36,6 +36,9 @@
     "webpack": "^5.45.1",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2",
-    "webpack-merge": "^5.8.0"
+    "webpack-merge": "^5.8.0",
+    "@playwright/test": "^1.12.3",
+    "parcel": "latest",
+    "playwright": "^1.12.3"
   }
 }

@@ -9,17 +9,19 @@
     "serve": "npm run dev",
     "start": "next start",
     "lint": "next lint",
-    "test:example": "npm run build && playwright test tests"
+    "test:example": "npm run build && playwright test tests --retries=3"
   },
   "dependencies": {
     "ipfs": "^0.57.0",
-    "next": "11.0.1",
+    "next": "11.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "eslint": "7.30.0",
-    "eslint-config-next": "11.0.1",
+    "@playwright/test": "^1.12.3",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.0",
+    "playwright": "^1.12.3",
     "rimraf": "^3.0.2",
     "test-util-ipfs-example": "^1.0.0"
   }
