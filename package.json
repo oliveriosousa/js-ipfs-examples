@@ -16,6 +16,9 @@
     "url": "git+https://github.com/ipfs-examples/js-ipfs-examples.git"
   },
   "license": "MIT",
+  "workspaces": [
+    "examples/*"
+  ],
   "scripts": {
     "postinstall": "lerna bootstrap",
     "clean": "npm run clean:examples && npm run clean:build && npm run clean:npm",
@@ -28,5 +31,9 @@
   "devDependencies": {
     "lerna": "^4.0.0",
     "rimraf": "^3.0.2"
+  },
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.22.11"
   }
 }
