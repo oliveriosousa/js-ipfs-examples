@@ -20,7 +20,6 @@
     "examples/*"
   ],
   "scripts": {
-    "postinstall": "lerna bootstrap",
     "clean": "npm run clean:examples && npm run clean:build && npm run clean:npm",
     "clean:examples": "lerna run clean && lerna clean --yes",
     "clean:npm": "rimraf package-lock.json node_modules",
